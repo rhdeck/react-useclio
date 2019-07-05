@@ -4,7 +4,7 @@ const useClio = ({ location, clientId, redirectUri, state }) => {
     redirectUri = location ? location.href : window.location.href;
   }
   const { code, url, status, state: returnedState } = useOauth({
-    authorizeUrl: "https://app.clio.com/oauth/approval",
+    authorizeUrl: "https://app.clio.com/oauth/authorize",
     state,
     clientId,
     redirectUri
